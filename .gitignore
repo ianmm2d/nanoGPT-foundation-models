@@ -8,6 +8,7 @@ __pycache__/
 *.pt
 *.pyc
 input.txt
+lastlogloss.txt
 gutenberg_poetry.txt
 env/
 venv/

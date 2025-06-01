@@ -330,6 +330,16 @@ while True:
 
     # termination conditions
     if iter_num > max_iters:
+        last_loss = lossf
+        # Define folder and file name
+        loss_path = 'lastlogloss.txt'
+
+        # Define the full path to the file
+        file_path = os.path.join(out_dir, loss_path)
+
+        # Write to the file
+        with open(file_path, 'w') as f:
+            f.write(f"{last_loss:.4f}")
         break
 
 if ddp:
