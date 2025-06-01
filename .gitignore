@@ -8,5 +8,6 @@ __pycache__/
 *.pt
 *.pyc
 input.txt
+gutenberg_poetry.txt
 env/
 venv/
