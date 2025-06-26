@@ -25,7 +25,7 @@ This repo was used to explore **scaling behavior of GPTs with respect to data an
 ---
 
 ### 3. Optimal Token Count (D) vs. Compute Budget
-![Optimal Tokens vs Compute](assets/optimal_scaling_N.png)
+![Optimal Tokens vs Compute](assets/optimal_scaling_D.png)
 
 > This plot shows the optimal number of training tokens (D) relative to compute budget, indicating how data requirements scale alongside model size to maximize training efficiency.
 
