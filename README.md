@@ -4,6 +4,9 @@ This repository is a **fork of [nanoGPT](https://github.com/karpathy/nanoGPT)**,
 
 The main purpose of this fork is to **investigate the scaling behavior of GPT models with respect to model size, dataset size, and compute budget**. This includes empirical experiments and visualizations to understand how training loss and model performance change when scaling up different factors.
 
+The approach and methodology used in the Jupyter notebook closely follow the insights and framework presented in the paper “”.
+[Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556)
+
 This repo retains the core simplicity and readability of nanoGPT, while adding tooling and experiments focused on scaling laws. The core files like `train.py` and `model.py` remain compact (~300 lines each) and easy to hack.
 
 Currently, `train.py` can reproduce GPT-2 (124M) results on OpenWebText, running on a single 8x A100 40GB node over about 4 days.
