@@ -1,9 +1,14 @@
+# nanoGPT (Fork) — Scaling Laws Exploration
 
-# nanoGPT
+This repository is a **fork of [nanoGPT](https://github.com/karpathy/nanoGPT)**, the simplest and fastest codebase for training and fine-tuning medium-sized GPT models.
 
-The simplest, fastest repository for training/finetuning medium-sized GPTs. It is a rewrite of [minGPT](https://github.com/karpathy/minGPT) that prioritizes teeth over education. Still under active development, but currently the file `train.py` reproduces GPT-2 (124M) on OpenWebText, running on a single 8XA100 40GB node in about 4 days of training. The code itself is plain and readable: `train.py` is a ~300-line boilerplate training loop and `model.py` a ~300-line GPT model definition, which can optionally load the GPT-2 weights from OpenAI. That's it.
+The main purpose of this fork is to **investigate the scaling behavior of GPT models with respect to model size, dataset size, and compute budget**. This includes empirical experiments and visualizations to understand how training loss and model performance change when scaling up different factors.
 
-Because the code is so simple, it is very easy to hack to your needs, train new models from scratch, or finetune pretrained checkpoints (e.g. biggest one currently available as a starting point would be the GPT-2 1.3B model from OpenAI).
+This repo retains the core simplicity and readability of nanoGPT, while adding tooling and experiments focused on scaling laws. The core files like `train.py` and `model.py` remain compact (~300 lines each) and easy to hack.
+
+Currently, `train.py` can reproduce GPT-2 (124M) results on OpenWebText, running on a single 8x A100 40GB node over about 4 days.
+
+---
 
 ## 📊 Scaling Results
 
